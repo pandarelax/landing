@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
-    "postbuild": "next-sitemap"
+    "postbuild": "next-sitemap",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
@@ -34,5 +35,9 @@
     "imagemin-optipng": "^8.0.0",
     "imagemin-svgo": "^8.0.0",
     "next-sitemap": "^1.2.4"
+  },
+  "engines": {
+    "npm": "5.6.0",
+    "node": "8.10.0"
   }
 }
